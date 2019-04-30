@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+package gRPC_Test.gRPC.Communication;
+
+service TestService {
+  rpc Test(TestRequest) returns (TestResponse) {}
+}
+
+message TestRequest {
+  int32 count = 1;
+  repeated Person persons = 2;
+}
+
+message TestResponse {
+  repeated Person persons = 1;
+}
+
+message Person {
+  int32 id = 1;
+  string name = 2;
+  int32 age = 3;
+  double weigth = 4;
+  enum Sex {
+    MALE = 0;
+    FEMALE = 1;
+  }
+  Sex sex = 5;
+  bool single = 6;
+}

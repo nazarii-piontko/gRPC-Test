@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Test.Web", "gRPC-Test.Web\gRPC-Test.Web.csproj", "{2820DB76-D8F7-43D6-864F-815D62CD2E4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Test.Application", "gRPC-Test.Application\gRPC-Test.Application.csproj", "{24075D88-9D83-4C4A-8BF5-A325351C37DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Test.gRPC", "gRPC-Test.gRPC\gRPC-Test.gRPC.csproj", "{EA56B914-0AC1-42CB-9937-3E6CFAF8D385}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2820DB76-D8F7-43D6-864F-815D62CD2E4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2820DB76-D8F7-43D6-864F-815D62CD2E4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2820DB76-D8F7-43D6-864F-815D62CD2E4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2820DB76-D8F7-43D6-864F-815D62CD2E4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24075D88-9D83-4C4A-8BF5-A325351C37DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24075D88-9D83-4C4A-8BF5-A325351C37DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24075D88-9D83-4C4A-8BF5-A325351C37DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24075D88-9D83-4C4A-8BF5-A325351C37DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA56B914-0AC1-42CB-9937-3E6CFAF8D385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA56B914-0AC1-42CB-9937-3E6CFAF8D385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA56B914-0AC1-42CB-9937-3E6CFAF8D385}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA56B914-0AC1-42CB-9937-3E6CFAF8D385}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
