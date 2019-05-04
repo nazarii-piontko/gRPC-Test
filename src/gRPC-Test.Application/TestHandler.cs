@@ -30,6 +30,8 @@ namespace gRPC_Test.Application
                     };
                 }
             }
+            else
+                response.Persons = new Person[0];
 
             return Task.FromResult(response);
         }

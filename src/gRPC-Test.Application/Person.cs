@@ -1,6 +1,6 @@
 namespace gRPC_Test.Application
 {
-    public  sealed class Person
+    public sealed class Person
     {
         public int Id { get; set; }
         

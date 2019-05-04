@@ -6,12 +6,12 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="MediatR" Version="6.0.0" />
-        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="6.0.1" />
+        <PackageReference Include="MediatR" Version="7.0.0" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
     </ItemGroup>
     
     <ItemGroup>
-      <ProjectReference Include="..\gRPC-Test.Application\gRPC-Test.Application.csproj" />
+      <ProjectReference Include="../gRPC-Test.Application/gRPC-Test.Application.csproj" />
     </ItemGroup>
 
 </Project>

@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package gRPC_Test.gRPC.Communication;
+package Test;
 
 service TestService {
   rpc Test(TestRequest) returns (TestResponse) {}

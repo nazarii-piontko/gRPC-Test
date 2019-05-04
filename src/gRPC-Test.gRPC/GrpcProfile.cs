@@ -7,12 +7,12 @@ namespace gRPC_Test.gRPC
     {
         public GrpcProfile()
         {
-            CreateMap<Person, GRPCTest.GRPC.Communication.Person>()
+            CreateMap<Person, Test.Person>()
                 .ReverseMap();
             
-            CreateMap<GRPCTest.GRPC.Communication.TestRequest, TestRequest>();
+            CreateMap<Test.TestRequest, TestRequest>();
             
-            CreateMap<TestResponse, GRPCTest.GRPC.Communication.TestResponse>()
+            CreateMap<TestResponse, Test.TestResponse>()
                 .ForMember(o => o.Persons, e => e.UseDestinationValue());
         }
     }

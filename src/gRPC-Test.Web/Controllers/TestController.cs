@@ -17,13 +17,13 @@ namespace gRPC_Test.Web.Controllers
         }
         
         [HttpGet]
-        public async Task<ActionResult<TestResponse>> GetAsync(int count)
+        public async Task<ActionResult<TestResponse>> GetAsync([FromQuery] int count)
         {
             return Ok(await _mediator.Send(new TestRequest {Count = count}));
         }
         
         [HttpPost]
-        public async Task<ActionResult<TestResponse>> PostAsync(TestRequest request)
+        public async Task<ActionResult<TestResponse>> PostAsync([FromBody] TestRequest request)
         {
             return Ok(await _mediator.Send(request));
         }

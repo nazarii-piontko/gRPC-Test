@@ -15,6 +15,7 @@ namespace gRPC_Test.gRPC
             services.AddAutoMapper(typeof(Startup).Assembly);
             services.AddMediatR(typeof(TestResponse).Assembly);
             services.AddGrpc();
+            services.AddSingleton<TestService>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

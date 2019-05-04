@@ -6,7 +6,7 @@ using MediatR;
 
 namespace gRPC_Test.gRPC
 {
-    public sealed class TestService : GRPCTest.GRPC.Communication.TestService.TestServiceBase
+    public sealed class TestService : Test.TestService.TestServiceBase
     {
         private readonly IMediator _mediator;
         private readonly IMapper _mapper;
@@ -17,12 +17,12 @@ namespace gRPC_Test.gRPC
             _mapper = mapper;
         }
         
-        public override async Task<GRPCTest.GRPC.Communication.TestResponse> Test(GRPCTest.GRPC.Communication.TestRequest request, 
+        public override async Task<Test.TestResponse> Test(Test.TestRequest request, 
             ServerCallContext context)
         {
             var grpcRequest = _mapper.Map<TestRequest>(request);
             var response = await _mediator.Send(grpcRequest);
-            var grpcResponse = _mapper.Map<GRPCTest.GRPC.Communication.TestResponse>(response);
+            var grpcResponse =  _mapper.Map<Test.TestResponse>(response);
             return grpcResponse;
         }
     }

@@ -1,5 +1,3 @@
-using System.Collections.Generic;
-
 namespace gRPC_Test.Application
 {
     public sealed class TestResponse

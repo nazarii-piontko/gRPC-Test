@@ -6,6 +6,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Test.Application", "gR
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gRPC-Test.gRPC", "gRPC-Test.gRPC\gRPC-Test.gRPC.csproj", "{EA56B914-0AC1-42CB-9937-3E6CFAF8D385}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{86E8D12E-64BA-451F-945A-8966CF48A4EB}"
+ProjectSection(SolutionItems) = preProject
+	Dockerfile = Dockerfile
+	docker-compose.yml = docker-compose.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

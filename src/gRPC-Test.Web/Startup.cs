@@ -12,7 +12,7 @@ namespace gRPC_Test.Web
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMediatR(typeof(TestRequest).Assembly);
-            
+
             services.AddControllers();
             
             services.AddResponseCompression();
@@ -25,7 +25,7 @@ namespace gRPC_Test.Web
                 app.UseDeveloperExceptionPage();
             }
             
-            app.UseResponseCompression();
+            // app.UseResponseCompression();
 
             app.UseRouting();
 
